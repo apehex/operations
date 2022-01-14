@@ -1,4 +1,4 @@
-# ignore the .git directory entirely
+# ignore the .git directory entirely
 find ./ \
 \( -type d -name .git -prune \) -o \
 -type f -print0 |
