@@ -1,0 +1,16 @@
+# a2dp-sink profile connect failed
+pulseaudio -k
+systemctl stop bluetooth.service
+pacman -S pulseaudio-bluetooth
+pulseaudio --start # verify in pavucontrol
+systemctl start bluetooth.service
+
+# pair the headset
+bluetoothctl
+#   power on
+#   agent on
+#   default-agent
+#   discoverable on
+#   scan on
+#   pair 08:DF:1F:53:D8:B8
+#   trust 08:DF:1F:53:D8:B8
