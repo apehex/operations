@@ -9,6 +9,7 @@ up /etc/openvpn/vpnfailsafe.sh
 down /etc/openvpn/vpnfailsafe.sh
 mute-replay-warnings
 EOF
+
 # start the VPN connection
 # disable ipv6
 sudo bash ~/.local/bin/disable-ipv6.sh
