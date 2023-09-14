@@ -4,11 +4,6 @@
 
 This projects is a collection of scripts, detailing operations that: I may forget / I'm too lazy to type / I want to automate.
 
-
-* Free software: MIT
-* Documentation: https://operations.readthedocs.io.
-
-
 ## Table of Contents
 
 - [Table of Contents](#table-of-contents)
@@ -59,13 +54,13 @@ See [CODE OF CONDUCT](CODE_OF_CONDUCT.md)
 
 ## Credits
 
-See [AUTHORS](AUTHORS.md)
+Made by [apehex](https://github.com/apehex).
 
 This project was initially created with [Cookiecutter][cookiecutter] and the custom [cookiecutter-git][cookiecutter-git] :cookie:
 
 ## License
 
-See [LICENSE](LICENSE)
+This work is licensed under AGPLv3, see [LICENSE](LICENSE).
 
 [cookiecutter]: https://github.com/audreyr/cookiecutter
 [cookiecutter-git]: https://github.com/apehex/cookiecutter-git
