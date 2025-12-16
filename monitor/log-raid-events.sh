@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+# add "PROGRAM /usr/local/sbin/mdadm-log" to `/etc/mdadm.conf` to enable it
 EVENT="${1:-UNKNOWN}"
 ARRAY="${2:-UNKNOWN}"
 DEVICE="${3:-}"
