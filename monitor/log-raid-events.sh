@@ -13,7 +13,7 @@ LOCK="/run/lock/mdadm.lock"
 install -d -m 0755 "$(dirname "$LOCK")"
 
 time="$(date --iso-8601=seconds)"
-host="$(hostname)"
+host="$(< /etc/hostname)"
 
 # if a component device is provided, include it
 if [[ -n "$DEVICE" ]]; then
