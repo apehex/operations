@@ -12,14 +12,14 @@ LOCK="/run/lock/mdadm.lock"
 # ensure lock dir exists (on Arch /run is tmpfs, recreated on boot)
 install -d -m 0755 "$(dirname "$LOCK")"
 
-time="$(date --iso-8601=seconds)"
+stamp="$(date --iso-8601=seconds)"
 host="$(< /etc/hostname)"
 
 # if a component device is provided, include it
 if [[ -n "$DEVICE" ]]; then
-  line="$time host=$host event=$EVENT array=$ARRAY device=$DEVICE"
+  line="$stamp host=$host event=$EVENT array=$ARRAY device=$DEVICE"
 else
-  line="$time host=$host event=$EVENT array=$ARRAY"
+  line="$stamp host=$host event=$EVENT array=$ARRAY"
 fi
 
 # serialize appends (mdadm could this script concurrently)
